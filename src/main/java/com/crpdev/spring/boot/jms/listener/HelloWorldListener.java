@@ -29,7 +29,7 @@ public class HelloWorldListener {
 
     }
 
-    @JmsListener(destination = JmsConfig.JMS_SEND_RCV_QUEUE)
+//    @JmsListener(destination = JmsConfig.JMS_SEND_RCV_QUEUE)
     public void listenForHello(@Payload HelloWorldMessage helloWorldMessage,
                                @Headers MessageHeaders headers, Message message) throws JMSException {
 
